@@ -9,7 +9,7 @@ end
 def summon_captain_planet(planeteer_calls)
   # Use an Enumerable to capitalize and add '!' to every element in the passed in array
   # Return a new array of the results
-  array.map do |string|
+  planeteer_calls.map do |string|
     string = "#{string.capitalize}!"
   end
 end
@@ -18,7 +18,7 @@ def long_planeteer_calls(planeteer_calls)
   # Use an Enumerable to check if any string in the passed in array is greater than 4 characters long
   # Return the boolean result of this check
   string_array = []
-  array.count do |string|
+  planeteer_calls.count do |string|
     string_array = %w[string]
     string_array.length > 4
   end
