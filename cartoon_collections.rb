@@ -19,8 +19,8 @@ def long_planeteer_calls(planeteer_calls)
   # Return the boolean result of this check
   string_array = []
   array.count do |string|
-    string%w
-    
+    string_array = %w[string]
+    string_array.length > 4
 end
 
 def find_valid_calls(planeteer_calls)
